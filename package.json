@@ -1,0 +1,37 @@
+{
+  "name": "com.pushsample.app",
+  "displayName": "pushsample",
+  "version": "1.0.0",
+  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Apache Cordova Team",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "clevertap-cordova": "git+https://github.com/CleverTap/clevertap-cordova.git",
+    "cordova-android": "^10.1.1",
+    "cordova-plugin-firebase-analytics": "^6.1.0",
+    "cordova-plugin-firebase-messaging": "^6.1.1",
+    "cordova-support-android-plugin": "^1.0.2"
+  },
+  "cordova": {
+    "platforms": [
+      "android"
+    ],
+    "plugins": {
+      "cordova-plugin-firebase-messaging": {
+        "ANDROID_FIREBASE_MESSAGING_VERSION": "22.0.+",
+        "ANDROIDX_CORE_VERSION": "1.6.+"
+      },
+      "clevertap-cordova": {
+        "CLEVERTAP_ACCOUNT_ID": "TEST-445-4W8-K46Z",
+        "CLEVERTAP_TOKEN": "TEST-b04-544"
+      }
+    }
+  }
+}
